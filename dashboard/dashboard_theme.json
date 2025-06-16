@@ -1,0 +1,56 @@
+{
+  "name": "MojeCustomTema",
+  "dataColors": [
+  "#ffdbc4",
+  "#ffab75",
+  "#ff7b27",
+  "#d75300",
+  "#893500",
+  "#3a1700"
+],
+  "background": "#FFFFFF",
+  "foreground": "#000000",
+  "tableAccent": "#5B9BD5",
+  "visualStyles": {
+    "columnChart": {
+      "*": {
+        "dataPoint": [
+          {
+            "fill": {
+              "solid": {
+                "color": "#02100c"
+              }
+            }
+          }
+        ],
+        "legend": [
+          {
+            "show": true
+          }
+        ],
+        "categoryAxis": [
+          {
+            "show": true,
+            "titleText": "Category",
+            "titleTextColor": {
+              "solid": {
+                "color": "#7F7F7F"
+              }
+            }
+          }
+        ],
+        "valueAxis": [
+          {
+            "show": true,
+            "titleText": "Value",
+            "titleTextColor": {
+              "solid": {
+                "color": "#7F7F7F"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
