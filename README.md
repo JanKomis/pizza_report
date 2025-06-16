@@ -1,0 +1,46 @@
+# Pizza sales analysis 
+
+Dataset about the sales of a fictional US pizzeria throughout the year 2015.
+
+## Summary
+
+The pizzeria is open from Monday to Sunday. It offers 32 different pizzas divided into 4 categories
+(classic, chicken, supreme, and veggie) and in 3 different sizes (S, M, L), 
+with one pizza (The Greek Pizza) also available in sizes XL and XXL. Data source [here](https://vincentarelbundock.github.io/Rdatasets/doc/gt/pizzaplace.html)
+
+<img src="./images/er_diagram.svg" alt="alternativní text" width="800">
+
+## Insights Deep-Dive
+### KPIs
+* In 2015, the total revenue was 801k USD from 21k orders.
+* The average order included 2.2 pizzas and cost 37.5 USD.
+* In terms of revenue, the most successful pizza was the Thai Chicken Pizza (42,322 USD) with 2,315 pieces sold.
+* The least successful pizza, both in terms of revenue and units sold, was The Brie Carre Pizza (11,352 USD) with only 480 pieces sold.
+
+### Sales Trends and Growth Rates
+* The weakest month was February, with revenue of 64,067 USD and 1,685 orders (38 USD per order).
+* The best month in terms of number of orders was August, with revenue of 71,027 USD and 1,935 orders (36.7 USD per order).
+* In terms of revenue, the strongest month was July (71,027 USD), and the weakest was October (62,566 USD). The weak result in October was caused by 4 days with no sales, likely due to the store being closed.
+* Besides October (4 days), the pizzeria was also closed for 2 days in September and 1 day in December.
+* In terms of average order value, the weakest month was August (a drop of -5.4% compared to November).
+
+### Pizza Category Performance
+* The most sold category is Classic, which accounts for approximately 30% of sales, while the remaining categories are almost evenly distributed across the other 70%. In terms of revenue, the distribution is nearly balanced.
+* Regarding size, the most popular one is L, consistently holding around 38% of sales.
+* Since XL and XXL sizes are only available for The Greek Pizza, comparisons should focus solely on that pizza. In this case, there is a noticeable increase in demand for the XL size, where the popularity of size L drops to between 14% and 23%, while XL dominates with demand ranging from 33% to 43%.
+
+### Time Trends
+* The distribution of orders throughout the workweek clearly shows a peak around lunchtime between 11 AM and 1 PM, followed by a second peak during dinnertime around 5 PM to 6 PM.
+* On weekends, the graph is flatter, with no clear peak around noon, as many people tend to eat at home.
+
+### Ingredient Usage
+The data do not contain the exact composition of the pizzas, only a list of ingredients. If a pizza contains onion and pepper, both will be marked as 1, 
+and the relative amount of ingredients is adjusted according to a size coefficient, which was estimated based on the price differences between pizza sizes. 
+For example, a small (S) Hawaiian pizza contains 1x pineapple, while a large (L) Hawaiian pizza contains 1.6x pineapple. If the composition of one size is known, 
+the composition of other sizes can be calculated by multiplying by this size coefficient.
+
+* The most used ingredient is garlic, which appears in 20 pizzas.
+* The top 5 least used ingredients are dominated by those found in The Brie Carre pizza.
+
+## Recommendations
+
