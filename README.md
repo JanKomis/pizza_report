@@ -8,7 +8,9 @@ The pizzeria is open from Monday to Sunday. It offers 32 different pizzas divide
 (classic, chicken, supreme, and veggie) and in 3 different sizes (S, M, L), 
 with one pizza (The Greek Pizza) also available in sizes XL and XXL. Data source [here](https://vincentarelbundock.github.io/Rdatasets/doc/gt/pizzaplace.html)
 
-<img src="./images/er_diagram.svg" alt="alternativní text" width="800">
+
+<div style="width: 800px; margin: 0 auto; text-align: center;"> <img src="./images/er_diagram.svg" alt="er_diagram.svg" width="800" /> 
+</div>
 
 ## Insights Deep-Dive
 ### KPIs
@@ -24,32 +26,37 @@ with one pizza (The Greek Pizza) also available in sizes XL and XXL. Data source
 * Besides October (4 days), the pizzeria was also closed for 2 days in September and 1 day in December.
 * In terms of average order value, the weakest month was August (a drop of -5.4% compared to November).
 
-<img src="./images/sale_overview.PNG" alt="alternativní text" width="800">
+<div> <img src="./images/sale_overview.PNG" alt="sale_overview.PNG" width="800" /> <p>sale_overview.PNG</p> </div>
 
 ### Pizza Category Performance
 * The most sold category is Classic, which accounts for approximately 30% of sales, while the remaining categories are almost evenly distributed across the other 70%. In terms of revenue, the distribution is nearly balanced.
 
-<img src="./images/trends.PNG" alt="alternativní text" width="800">
+<div> <img src="./images/trends.PNG" alt="trends.PNG" width="800" /> <p>trends.PNG</p> </div>
 
 * Regarding size, the most popular one is L, consistently holding around 38% of sales.
 * Since XL and XXL sizes are only available for The Greek Pizza, comparisons should focus solely on that pizza. In this case, there is a noticeable increase in demand for the XL size, where the popularity of size L drops to between 14% and 23%, while XL dominates with demand ranging from 33% to 43%.
 
+<div style="display: flex; gap: 20px; align-items: flex-start;">
+<img src="./images/pizzas_size.PNG" alt="alternativní text" height="450">
+<img src="./images/pizzas_size_greek_pizza.PNG" alt="alternativní text" height="450">
+</div>
+
 <img src="./images/order_analysis.PNG" alt="alternativní text" width="800">
+<img src="./images/distribution_size_greek_pizza.PNG" alt="alternativní text" width="800">
 
 ### Time Trends
 * The distribution of orders throughout the workweek clearly shows a peak around lunchtime between 11 AM and 1 PM, followed by a second peak during dinnertime around 5 PM to 6 PM.
 * On weekends, the graph is flatter, with no clear peak around noon, as many people tend to eat at home.
-
+* The highest order volume is on Friday (3,538), while the lowest is on Sunday (2,624), which is a decrease of 25.8%.
 
 <img src="./images/monday_distributions.PNG" alt="alternativní text" width="800">
 <img src="./images/sunday_distributions.PNG" alt="alternativní text" width="800">
 
 
 ### Ingredient Usage
-The data do not contain the exact composition of the pizzas, only a list of ingredients. If a pizza contains onion and pepper, both will be marked as 1, 
+*The data do not contain the exact composition of the pizzas, only a list of ingredients. If a pizza contains onion and pepper, both will be marked as 1, 
 and the relative amount of ingredients is adjusted according to a size coefficient, which was estimated based on the price differences between pizza sizes. 
-For example, a small (S) Hawaiian pizza contains 1x pineapple, while a large (L) Hawaiian pizza contains 1.6x pineapple. If the composition of one size is known, 
-the composition of other sizes can be calculated by multiplying by this size coefficient.
+For example, a small (S) Hawaiian pizza contains 1x pineapple, while a large (L) Hawaiian pizza contains 1.6x pineapple. If the composition of one size is known, the composition of other sizes can be calculated by multiplying by this size coefficient.*
 
 * The most used ingredient is garlic, which appears in 20 pizzas.
 * The top 5 least used ingredients are dominated by those found in The Brie Carre pizza.
@@ -60,4 +67,25 @@ the composition of other sizes can be calculated by multiplying by this size coe
 </div>
 
 ## Recommendations
+### Satisfy the demand for XL pizzas
+* I assume that the margin increases or at least remains the same with larger pizza sizes.
+* Data shows that, at least for the Greek pizza, demand for the XL size has increased, and this growth did not come at the expense of overall order size. Therefore, it may be worth considering adding an XL option for the best-selling pizza types.
+
+### Increase awareness of low-selling pizzas
+* Unusual flavors can differentiate the pizzeria from others, so I wouldn’t remove the low-selling ones.
+* Customers might be reluctant to experiment, so it could be a good idea to include low-selling pizzas as a bonus in larger orders — for example, a "buy 3, get 1 free" offer.
+* The effect could be measured indirectly through demand increase and hypothesis testing, or more effectively through some form of loyalty program (e.g. sticker cards, a certain number of online orders, etc.).
+
+### Add drinks to the menu
+* Drinks are a good way to increase the number of items per order.
+* They can also be used to create “value deals” ([Quantity Discount Bias](https://www.investopedia.com/terms/q/quantity-discount.asp)), such as a lunch combo with an XL pizza and a beer for just $30.
+
+### Boost weekend sales
+* Weekend sales are significantly lower, mainly due to the lack of a strong lunchtime peak.
+* It would make sense to test the above-mentioned ideas primarily on Sundays, which are the weakest day of the week.
+
+
+
+
+
 
