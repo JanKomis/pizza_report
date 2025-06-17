@@ -24,14 +24,26 @@ with one pizza (The Greek Pizza) also available in sizes XL and XXL. Data source
 * Besides October (4 days), the pizzeria was also closed for 2 days in September and 1 day in December.
 * In terms of average order value, the weakest month was August (a drop of -5.4% compared to November).
 
+<img src="./images/sale_overview.PNG" alt="alternativní text" width="800">
+
 ### Pizza Category Performance
 * The most sold category is Classic, which accounts for approximately 30% of sales, while the remaining categories are almost evenly distributed across the other 70%. In terms of revenue, the distribution is nearly balanced.
+
+<img src="./images/trends.PNG" alt="alternativní text" width="800">
+
 * Regarding size, the most popular one is L, consistently holding around 38% of sales.
 * Since XL and XXL sizes are only available for The Greek Pizza, comparisons should focus solely on that pizza. In this case, there is a noticeable increase in demand for the XL size, where the popularity of size L drops to between 14% and 23%, while XL dominates with demand ranging from 33% to 43%.
+
+<img src="./images/order_analysis.PNG" alt="alternativní text" width="800">
 
 ### Time Trends
 * The distribution of orders throughout the workweek clearly shows a peak around lunchtime between 11 AM and 1 PM, followed by a second peak during dinnertime around 5 PM to 6 PM.
 * On weekends, the graph is flatter, with no clear peak around noon, as many people tend to eat at home.
+
+
+<img src="./images/monday_distributions.PNG" alt="alternativní text" width="800">
+<img src="./images/sunday_distributions.PNG" alt="alternativní text" width="800">
+
 
 ### Ingredient Usage
 The data do not contain the exact composition of the pizzas, only a list of ingredients. If a pizza contains onion and pepper, both will be marked as 1, 
@@ -41,6 +53,11 @@ the composition of other sizes can be calculated by multiplying by this size coe
 
 * The most used ingredient is garlic, which appears in 20 pizzas.
 * The top 5 least used ingredients are dominated by those found in The Brie Carre pizza.
+
+<div style="display: flex; gap: 20px; align-items: flex-start;">
+<img src="./images/top_ingredients.PNG" alt="alternativní text" height="200">
+<img src="./images/bottom_ingredients.PNG" alt="alternativní text" height="200">
+</div>
 
 ## Recommendations
 
